@@ -12,6 +12,7 @@ def handle_packets(packet):
 
 def get_interface():
     interfaces = get_if_list()
+    print("Interfaces found:", interfaces) 
     for interface in interfaces:
         if interface != "lo":
             return interface
